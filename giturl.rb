@@ -2,24 +2,24 @@
 class Giturl < Formula
   desc "A converter for Git URLs."
   homepage "https://github.com/nakabonne/giturl"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nakabonne/giturl/releases/download/v0.1.0/giturl_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "63ab963a6393ffdff3fa1c0754cad27429e00a57f510732589a51656529d8848"
+    url "https://github.com/nakabonne/giturl/releases/download/v0.1.1/giturl_0.1.1_Darwin_x86_64.tar.gz"
+    sha256 "cf1af911ff13e0325dd69f997cf99993a90dbefeaaa6965c3270deb4de71b249"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/nakabonne/giturl/releases/download/v0.1.0/giturl_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "7d32ebb213583c94775c3709c82fda5b4ad729977943fb8dc5fede7c62b28126"
+      url "https://github.com/nakabonne/giturl/releases/download/v0.1.1/giturl_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "8350352d6394e431880bf403a46074f023e80526f2bc01a372a61cba4afd1b97"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nakabonne/giturl/releases/download/v0.1.0/giturl_0.1.0_Linux_arm64.tar.gz"
-        sha256 "a29198a699610f2849f69d9accefc17a483962ba7fd04f27cf6efcd7c353af85"
+        url "https://github.com/nakabonne/giturl/releases/download/v0.1.1/giturl_0.1.1_Linux_arm64.tar.gz"
+        sha256 "62184a5bad7ad74acbccb9eb741ce08917e3371788bbb7f0432e957df68626de"
       else
-        url "https://github.com/nakabonne/giturl/releases/download/v0.1.0/giturl_0.1.0_Linux_armv6.tar.gz"
-        sha256 "a7ee491907add73036ab98fe103035791fc01f3ced1515d31ee29056d2de09e4"
+        url "https://github.com/nakabonne/giturl/releases/download/v0.1.1/giturl_0.1.1_Linux_armv6.tar.gz"
+        sha256 "0632921a348404130b734e24940231ab12035f5c263b80e652362b88026b0943"
       end
     end
   end
